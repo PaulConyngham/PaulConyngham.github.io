@@ -9,5 +9,251 @@
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +1100</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title>Test</title>
+      <link>https://PaulConyngham.github.io/test/</link>
+      <pubDate>Sun, 27 Jan 2019 21:43:02 +1100</pubDate>
+      
+      <guid>https://PaulConyngham.github.io/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Multi Armed Bandit Problem</title>
+      <link>https://PaulConyngham.github.io/the-multi-armed-bandit-problem/</link>
+      <pubDate>Sun, 27 Jan 2019 21:40:56 +1100</pubDate>
+      
+      <guid>https://PaulConyngham.github.io/the-multi-armed-bandit-problem/</guid>
+      <description>&lt;nav&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#by-paul-steven-conyngham&#34;&gt;By: Paul Steven Conyngham&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#reinforcement-learning-terminology-decoded-1&#34;&gt;Reinforcement Learning Terminology Decoded #1:&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;p&gt;Intro to Reinforcement Learning&lt;/p&gt;
+
+&lt;h6 id=&#34;by-paul-steven-conyngham&#34;&gt;By: Paul Steven Conyngham&lt;/h6&gt;
+
+&lt;p&gt;#Bandits!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/N9ff6tt/what-the-shell-by-paul.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Scientists, and machine learning researchers in particular love to give fancy names to things so that no one can understand what they are on about.&lt;/p&gt;
+
+&lt;p&gt;For someone relatively new to machine learning, &amp;ldquo;The multi armed bandit problem&amp;rdquo; sounds like one of these fancy names.&lt;/p&gt;
+
+&lt;p&gt;The Multi-Armed bandit is usually considered to be the starting point for many an introduction to Reinforcement learning. It is my hope that why this is becomes obvious by the end of this post.&lt;/p&gt;
+
+&lt;p&gt;So then, what the shell is a bandit?&lt;/p&gt;
+
+&lt;p&gt;This.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/xHx2jFt/Screen-Shot-2019-01-18-at-8-29-44-pm.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A bandit is an old fashioned american name for what we usually call a &amp;ldquo;slot machine&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Here in Australia we like to call it the &amp;ldquo;pokies&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Ok that is great and all, but what the shell is a multi armed bandit?&lt;/p&gt;
+
+&lt;p&gt;Simply, this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/Cmm0NLn/Screen-Shot-2019-01-18-at-8-38-17-pm.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A whole bunch of &amp;ldquo;bandits&amp;rdquo; stacked together such there are many &amp;ldquo;arms&amp;rdquo; to pull, this is where the &amp;ldquo;multi armed&amp;rdquo; part comes in.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/8K8pbwx/multiararmedbandit-what-the-shell.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hold up, hold up.&lt;/p&gt;
+
+&lt;p&gt;Why are we talking about slot machines with regards to machine learning?&lt;/p&gt;
+
+&lt;p&gt;Well, one definition for reinforcement learning, the subfield of machine learning that we are talking about here deals with:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Finding the optimal strategy to solving a problem in the face of massive uncertainty.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ok great. Let&amp;rsquo;s see why this is important by expanding on and explaining this definition a little bit further by considering an example.&lt;/p&gt;
+
+&lt;p&gt;Lets say you wanted to drive your car from your home to your work.&lt;/p&gt;
+
+&lt;p&gt;Along your way you are not quite sure what the traffic lights will be doing or for that matter what the other cars will be doing. You could encounter 5 other cars that delay you at a roundabout, or you could encounter 10 red traffic lights in a row.&lt;/p&gt;
+
+&lt;p&gt;This is the uncertainty part in the definition above.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/Pr2wZ0t/Screen-Shot-2019-01-18-at-8-58-08-pm.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We also need a &lt;strong&gt;&lt;em&gt;plan of what we will do&lt;/em&gt;&lt;/strong&gt; once we encounter the intersections, roundabouts &amp;amp; traffic lights as we drive our car on our way to work.&lt;/p&gt;
+
+&lt;p&gt;This plan or &lt;strong&gt;&lt;em&gt;strategy&lt;/em&gt;&lt;/strong&gt; is what reinforcement learning aims to figure out, more specifically, reinforcement learning attempts to learn the &lt;strong&gt;&lt;em&gt;optimal strategy&lt;/em&gt;&lt;/strong&gt; -  that is to say, the best possible strategy for a specific task (in this case, driving through all the obstacles of traffic lights, roundabouts etc from home to work.)&lt;/p&gt;
+
+&lt;p&gt;So this is the &lt;strong&gt;&lt;em&gt;strategy&lt;/em&gt;&lt;/strong&gt; part in the quote above.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h6 id=&#34;reinforcement-learning-terminology-decoded-1&#34;&gt;Reinforcement Learning Terminology Decoded #1:&lt;/h6&gt;
+
+&lt;p&gt;In reinforcement learning the name given to the strategy that we are following to solve a given problem is called a &lt;strong&gt;&lt;em&gt;policy&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;(so that is your first bit of fancy reinforcement learning terminology decoded).&lt;/p&gt;
+
+&lt;p&gt;Following the previous example of driving to work. An example of a &lt;strong&gt;&lt;em&gt;policy&lt;/em&gt;&lt;/strong&gt; would be driving as fast as possible to work (this is our strategy).&lt;/p&gt;
+
+&lt;p&gt;Another example of a &lt;strong&gt;&lt;em&gt;policy&lt;/em&gt;&lt;/strong&gt; would be to ignore all red lights (again this could be another strategy).&lt;/p&gt;
+
+&lt;p&gt;(Of course your policy could also be something boring. for example, only moving on green traffic lights, stopping for all other cars at roundabouts like I hope you are doing&amp;hellip; etc etc)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Ok so now we know that we are dealing with finding best strategies (&lt;em&gt;policies&lt;/em&gt;) in the face of unknown conditions (&lt;em&gt;uncertainty&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;Well, the reason that the multi armed bandit problem is usually brought up as the starting point of all reinforcement learning text books is that it introduces several core RL ideas,  the first of which, is that in slot machines, you are dealing with &lt;em&gt;uncertainty&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;That is to say if you go up to a slot machine and pull the lever, you have no idea if you are going to get a payout in the form of cash or not.&lt;/p&gt;
+
+&lt;p&gt;The reason we examine the multi armed bandit as our &amp;ldquo;toy&amp;rdquo; problem for learning Reinforcement Learning is because it teaches us the second concept with regards to RL, that is, what do we do when we have more than one choice to solve a problem and would like to choose the best choice or in terms of our machine learning terminology from before - our best strategy or “policy”&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;In the (multi) bandit problem - what do we do when we have more than one slot machine to choose from , as in, we would like to know which slot machine is going to give us the biggest payout or &lt;strong&gt;&lt;em&gt;reward&lt;/em&gt;&lt;/strong&gt;- which machine is the best choice?&lt;/p&gt;
+
+&lt;p&gt;How do we go about figuring out which slot machine (or bandit) will go about giving us the biggest reward?&lt;/p&gt;
+
+&lt;p&gt;Lets get cracking on this problem by introducing another Reinforcement Learning idea and your first (baby) Reinforcement Learning Algorithm.&lt;/p&gt;
+
+&lt;p&gt;#Exploration vs Exploitation&lt;/p&gt;
+
+&lt;p&gt;There is this age old problem in life and it goes something like this.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/FqrfDc7/itsamatch-1.jpg&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s say you are on the hunt for a hot date with the eventual goal of picking up a life partner.&lt;/p&gt;
+
+&lt;p&gt;First you hop on your favourite dating app of choice. After chatting to a few people you manage to score yourself a hot date.&lt;/p&gt;
+
+&lt;p&gt;The way they were coming on to you so strongly on the first date was a was a bit weird, strike out ,you decide that&amp;rsquo;s it for the dating app person.&lt;/p&gt;
+
+&lt;p&gt;You decide dating apps are kind of lame, so you head out to the bar.&lt;/p&gt;
+
+&lt;p&gt;You manage to work up the courage to approach someone and after talking to them for a bit begin to realise that this person has really bad breath and might not quite be the right person for you.&lt;/p&gt;
+
+&lt;p&gt;Finally, towards the end of the night and after a few drinks, you work up your last bit of courage to go over and talk to an attractive person, who has been looking at you over their shoulder all night.&lt;/p&gt;
+
+&lt;p&gt;You hit it off and get their number. Two years later you are in a happy relationship and decide to get married, happily, ever after.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/dktFB3V/in-love-1071325-960-720.jpg&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;What does this have to do with machine learning?&lt;/p&gt;
+
+&lt;p&gt;What was just described above is an age old problem in machine learning.&lt;/p&gt;
+
+&lt;p&gt;How much time do you spend &lt;strong&gt;&amp;ldquo;exploring&amp;rdquo;&lt;/strong&gt;, (going on dates with people looking for a partner etc),&lt;/p&gt;
+
+&lt;p&gt;Versus,&lt;/p&gt;
+
+&lt;p&gt;How much time do you spend, ahem, &lt;strong&gt;&amp;ldquo;exploiting&amp;rdquo;&lt;/strong&gt; (being in a relationship with someone etc.)&lt;/p&gt;
+
+&lt;p&gt;Another example of Exploration vs Exploitation is how much time you spend looking at potential job opportunities (exploring) vs being in a particular job (exploiting).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/Tty4PWy/Screen-Shot-2019-01-18-at-9-47-26-pm.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Yet another example would be if you are a stock trader. How much time do you spend searching for the best trading strategy (exploring) vs implementing a strategy on the stock market (exploiting).&lt;/p&gt;
+
+&lt;p&gt;The reason we consider the exploration vs exploitation idea on the multi armed bandit problem (multi -slot machine problem), is that again remember there is more than one machine and &lt;strong&gt;_each slot machine&amp;rsquo;s is tuned slightly differently&lt;/strong&gt;_, such that each slot machine will give payouts (rewards) of cash in different amounts.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;So how then do we go about discovering which Bandit pays out the most?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Well, if you have not guessed it already, what we would like to do is spend some time &lt;strong&gt;&lt;em&gt;exploring&lt;/em&gt;&lt;/strong&gt; - to see amongst our many slot machines, which slot machine gives the best payout.&lt;/p&gt;
+
+&lt;p&gt;When we have discovered which machine gives the best payout, we then want to keep &lt;strong&gt;&lt;em&gt;exploiting&lt;/em&gt;&lt;/strong&gt; this machine.&lt;/p&gt;
+
+&lt;p&gt;Time for your first RL (baby) algorithm&lt;/p&gt;
+
+&lt;p&gt;#The Epsilon-Greedy Algorithm&lt;/p&gt;
+
+&lt;p&gt;Simply, the Episilon Greedy Algorithm is this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/4TPp8h2/Screen-Shot-2019-01-19-at-1-02-05-pm.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Seriously though, if you did not understand that no dramas at all. The rest of this post is going to be about breaking apart the mathematical notation above into a more human readable format (HRF) :)&lt;/p&gt;
+
+&lt;p&gt;Ok so lets break the above apart and take this one step at a time:&lt;/p&gt;
+
+&lt;p&gt;#Step 1: Epsilon&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;######Reinforcement Learning Terminology Decoded #2:&lt;/p&gt;
+
+&lt;p&gt;According to wikipedia Epsilon is the 5th letter of the Greek alphabet and looks like this:&lt;/p&gt;
+
+&lt;p&gt;###ε&lt;/p&gt;
+
+&lt;p&gt;Hieroglyphics right?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;What epsilon is actually used for is the interesting bit.&lt;/p&gt;
+
+&lt;p&gt;Lets say we wanted to implement some kind of &lt;strong&gt;Exploration vs. Exploitation&lt;/strong&gt; on a problem.&lt;/p&gt;
+
+&lt;p&gt;How would we do it?&lt;/p&gt;
+
+&lt;p&gt;Lets now examine the multi-armed bandit problem in a little bit more detail, to explain  &lt;strong&gt;&lt;em&gt;epsilon&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;greedy&lt;/em&gt;&lt;/strong&gt; and the reason why we are examining this problem in the first place.&lt;/p&gt;
+
+&lt;p&gt;Lets say we have a bandit (slot machine) and that if I pulled the lever on the bandit 50 times, I would get data of the payout of that slot machine that looked like a bell curve like so:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/v4S6XKH/Screen-Shot-2019-01-21-at-7-50-39-am.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Figure 1. Average payout of a slot machine based on the amount of times that the lever has been pulled. For example, we can see that at around the $70 mark the lever on the slot machine has been pulled around 44 times.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;We can say that our slot machine in the above graph, has an average payout of around $70- as we can see that the middle of the bell curve is roughly centered around the $70 mark.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;######Reinforcement Learning Terminology Decoded #3:&lt;/p&gt;
+
+&lt;p&gt;In machine learning we use another name for the &lt;strong&gt;bell curve&lt;/strong&gt; (pictured below) and that name is the &amp;ldquo;&lt;strong&gt;normal distribution&lt;/strong&gt;&amp;rdquo;. This is technically more correct as we will see soon.
+A distribution is usually &amp;ldquo;centered&amp;rdquo; around an average number.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/k3vDq8m/Screen-Shot-2019-01-21-at-7-55-09-am.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Figure 2: Normal distribution centered around 100.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The reason we use the &lt;strong&gt;&lt;em&gt;distribution&lt;/em&gt;&lt;/strong&gt; idea to represent our Bandit is because of &lt;strong&gt;&lt;em&gt;uncertainty&lt;/em&gt;&lt;/strong&gt;, (a slot machine is meant to be &lt;strong&gt;&lt;em&gt;random&lt;/em&gt;&lt;/strong&gt; -  and we would like to discover a pattern in the “random” data if it exists&amp;hellip;).&lt;/p&gt;
+
+&lt;p&gt;Each time we pull the lever on our bandit, it gives a different cash payout every time.&lt;/p&gt;
+
+&lt;p&gt;So in figure 1 above sometimes it will be $65, sometimes it will be $80, but the average payout over time will be $70. This is the centre of our distribution.&lt;/p&gt;
+
+&lt;p&gt;Now let&amp;rsquo;s examine the case of two slot machines.&lt;/p&gt;
+
+&lt;p&gt;Each slot machine will each give payouts according to two &lt;strong&gt;&lt;em&gt;different normal distributions.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;What does this mean? Have a look at the image below&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/1dsQtvS/Screen-Shot-2019-01-21-at-8-02-59-am.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;figure 3, Here we can see that our first bandit, the bandit in blue, had an average value of  70 - that is to say the distribution was centered around 70.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

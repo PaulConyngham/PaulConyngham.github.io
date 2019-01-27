@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.3.0">
+  <meta name="generator" content="Hugo 0.53" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Paul Conyngham">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="By: Paul Steven Conyngham Reinforcement Learning Terminology Decoded #1:        Intro to Reinforcement Learning
+By: Paul Steven Conyngham #Bandits!
+Scientists, and machine learning researchers in particular love to give fancy names to things so that no one can understand what they are on about.
+For someone relatively new to machine learning, &ldquo;The multi armed bandit problem&rdquo; sounds like one of these fancy names.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://PaulConyngham.github.io/the-multi-armed-bandit-problem/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="https://PaulConyngham.github.io/index.xml" type="application/rss+xml" title="Human Algorithms">
+  <link rel="feed" href="https://PaulConyngham.github.io/index.xml" type="application/rss+xml" title="Human Algorithms">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://PaulConyngham.github.io/the-multi-armed-bandit-problem/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Human Algorithms">
+  <meta property="og:url" content="https://PaulConyngham.github.io/the-multi-armed-bandit-problem/">
+  <meta property="og:title" content="The Multi Armed Bandit Problem | Human Algorithms">
+  <meta property="og:description" content="By: Paul Steven Conyngham Reinforcement Learning Terminology Decoded #1:        Intro to Reinforcement Learning
+By: Paul Steven Conyngham #Bandits!
+Scientists, and machine learning researchers in particular love to give fancy names to things so that no one can understand what they are on about.
+For someone relatively new to machine learning, &ldquo;The multi armed bandit problem&rdquo; sounds like one of these fancy names."><meta property="og:image" content="https://PaulConyngham.github.io/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2019-01-27T21:40:56&#43;11:00">
+  
+  <meta property="article:modified_time" content="2019-01-27T21:40:56&#43;11:00">
+  
+
+  
+
+  
+
+  <title>The Multi Armed Bandit Problem | Human Algorithms</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Human Algorithms</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#posts">
+            
+            <span>Blog Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/tutorial/">
+            
+            <span>Talks</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>Teaching</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>CV</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">The Multi Armed Bandit Problem</h1>
+
+  
+
+  
+    
+
+
+<meta content="2019-01-27 21:40:56 &#43;1100 AEDT" itemprop="datePublished">
+<meta content="2019-01-27 21:40:56 &#43;1100 AEDT" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=The%20Multi%20Armed%20Bandit%20Problem&amp;url=https%3a%2f%2fPaulConyngham.github.io%2fthe-multi-armed-bandit-problem%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fPaulConyngham.github.io%2fthe-multi-armed-bandit-problem%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fPaulConyngham.github.io%2fthe-multi-armed-bandit-problem%2f&amp;title=The%20Multi%20Armed%20Bandit%20Problem"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fPaulConyngham.github.io%2fthe-multi-armed-bandit-problem%2f&amp;title=The%20Multi%20Armed%20Bandit%20Problem"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=The%20Multi%20Armed%20Bandit%20Problem&amp;body=https%3a%2f%2fPaulConyngham.github.io%2fthe-multi-armed-bandit-problem%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <nav>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#by-paul-steven-conyngham">By: Paul Steven Conyngham</a></li>
+<li><a href="#reinforcement-learning-terminology-decoded-1">Reinforcement Learning Terminology Decoded #1:</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+<p>Intro to Reinforcement Learning</p>
+
+<h6 id="by-paul-steven-conyngham">By: Paul Steven Conyngham</h6>
+
+<p>#Bandits!</p>
+
+<p><img src="https://i.ibb.co/N9ff6tt/what-the-shell-by-paul.png" alt="alt text" /></p>
+
+<p>Scientists, and machine learning researchers in particular love to give fancy names to things so that no one can understand what they are on about.</p>
+
+<p>For someone relatively new to machine learning, &ldquo;The multi armed bandit problem&rdquo; sounds like one of these fancy names.</p>
+
+<p>The Multi-Armed bandit is usually considered to be the starting point for many an introduction to Reinforcement learning. It is my hope that why this is becomes obvious by the end of this post.</p>
+
+<p>So then, what the shell is a bandit?</p>
+
+<p>This.</p>
+
+<p><img src="https://i.ibb.co/xHx2jFt/Screen-Shot-2019-01-18-at-8-29-44-pm.png" alt="alt text" /></p>
+
+<p>A bandit is an old fashioned american name for what we usually call a &ldquo;slot machine&rdquo;.</p>
+
+<p>Here in Australia we like to call it the &ldquo;pokies&rdquo;.</p>
+
+<p>Ok that is great and all, but what the shell is a multi armed bandit?</p>
+
+<p>Simply, this:</p>
+
+<p><img src="https://i.ibb.co/Cmm0NLn/Screen-Shot-2019-01-18-at-8-38-17-pm.png" alt="alt text" /></p>
+
+<p>A whole bunch of &ldquo;bandits&rdquo; stacked together such there are many &ldquo;arms&rdquo; to pull, this is where the &ldquo;multi armed&rdquo; part comes in.</p>
+
+<p><img src="https://i.ibb.co/8K8pbwx/multiararmedbandit-what-the-shell.png" alt="alt text" /></p>
+
+<p>Hold up, hold up.</p>
+
+<p>Why are we talking about slot machines with regards to machine learning?</p>
+
+<p>Well, one definition for reinforcement learning, the subfield of machine learning that we are talking about here deals with:</p>
+
+<blockquote>
+<p>&ldquo;Finding the optimal strategy to solving a problem in the face of massive uncertainty.&rdquo;</p>
+</blockquote>
+
+<p>Ok great. Let&rsquo;s see why this is important by expanding on and explaining this definition a little bit further by considering an example.</p>
+
+<p>Lets say you wanted to drive your car from your home to your work.</p>
+
+<p>Along your way you are not quite sure what the traffic lights will be doing or for that matter what the other cars will be doing. You could encounter 5 other cars that delay you at a roundabout, or you could encounter 10 red traffic lights in a row.</p>
+
+<p>This is the uncertainty part in the definition above.</p>
+
+<p><img src="https://i.ibb.co/Pr2wZ0t/Screen-Shot-2019-01-18-at-8-58-08-pm.png" alt="alt text" /></p>
+
+<p>We also need a <strong><em>plan of what we will do</em></strong> once we encounter the intersections, roundabouts &amp; traffic lights as we drive our car on our way to work.</p>
+
+<p>This plan or <strong><em>strategy</em></strong> is what reinforcement learning aims to figure out, more specifically, reinforcement learning attempts to learn the <strong><em>optimal strategy</em></strong> -  that is to say, the best possible strategy for a specific task (in this case, driving through all the obstacles of traffic lights, roundabouts etc from home to work.)</p>
+
+<p>So this is the <strong><em>strategy</em></strong> part in the quote above.</p>
+
+<hr />
+
+<h6 id="reinforcement-learning-terminology-decoded-1">Reinforcement Learning Terminology Decoded #1:</h6>
+
+<p>In reinforcement learning the name given to the strategy that we are following to solve a given problem is called a <strong><em>policy</em></strong>.</p>
+
+<p>(so that is your first bit of fancy reinforcement learning terminology decoded).</p>
+
+<p>Following the previous example of driving to work. An example of a <strong><em>policy</em></strong> would be driving as fast as possible to work (this is our strategy).</p>
+
+<p>Another example of a <strong><em>policy</em></strong> would be to ignore all red lights (again this could be another strategy).</p>
+
+<p>(Of course your policy could also be something boring. for example, only moving on green traffic lights, stopping for all other cars at roundabouts like I hope you are doing&hellip; etc etc)</p>
+
+<hr />
+
+<p>Ok so now we know that we are dealing with finding best strategies (<em>policies</em>) in the face of unknown conditions (<em>uncertainty</em>).</p>
+
+<p>Well, the reason that the multi armed bandit problem is usually brought up as the starting point of all reinforcement learning text books is that it introduces several core RL ideas,  the first of which, is that in slot machines, you are dealing with <em>uncertainty</em>.</p>
+
+<p>That is to say if you go up to a slot machine and pull the lever, you have no idea if you are going to get a payout in the form of cash or not.</p>
+
+<p>The reason we examine the multi armed bandit as our &ldquo;toy&rdquo; problem for learning Reinforcement Learning is because it teaches us the second concept with regards to RL, that is, what do we do when we have more than one choice to solve a problem and would like to choose the best choice or in terms of our machine learning terminology from before - our best strategy or “policy”&hellip;</p>
+
+<p>In the (multi) bandit problem - what do we do when we have more than one slot machine to choose from , as in, we would like to know which slot machine is going to give us the biggest payout or <strong><em>reward</em></strong>- which machine is the best choice?</p>
+
+<p>How do we go about figuring out which slot machine (or bandit) will go about giving us the biggest reward?</p>
+
+<p>Lets get cracking on this problem by introducing another Reinforcement Learning idea and your first (baby) Reinforcement Learning Algorithm.</p>
+
+<p>#Exploration vs Exploitation</p>
+
+<p>There is this age old problem in life and it goes something like this.</p>
+
+<p><img src="https://i.ibb.co/FqrfDc7/itsamatch-1.jpg" alt="alt text" /></p>
+
+<p>Let’s say you are on the hunt for a hot date with the eventual goal of picking up a life partner.</p>
+
+<p>First you hop on your favourite dating app of choice. After chatting to a few people you manage to score yourself a hot date.</p>
+
+<p>The way they were coming on to you so strongly on the first date was a was a bit weird, strike out ,you decide that&rsquo;s it for the dating app person.</p>
+
+<p>You decide dating apps are kind of lame, so you head out to the bar.</p>
+
+<p>You manage to work up the courage to approach someone and after talking to them for a bit begin to realise that this person has really bad breath and might not quite be the right person for you.</p>
+
+<p>Finally, towards the end of the night and after a few drinks, you work up your last bit of courage to go over and talk to an attractive person, who has been looking at you over their shoulder all night.</p>
+
+<p>You hit it off and get their number. Two years later you are in a happy relationship and decide to get married, happily, ever after.</p>
+
+<p><img src="https://i.ibb.co/dktFB3V/in-love-1071325-960-720.jpg" alt="alt text" /></p>
+
+<p>What does this have to do with machine learning?</p>
+
+<p>What was just described above is an age old problem in machine learning.</p>
+
+<p>How much time do you spend <strong>&ldquo;exploring&rdquo;</strong>, (going on dates with people looking for a partner etc),</p>
+
+<p>Versus,</p>
+
+<p>How much time do you spend, ahem, <strong>&ldquo;exploiting&rdquo;</strong> (being in a relationship with someone etc.)</p>
+
+<p>Another example of Exploration vs Exploitation is how much time you spend looking at potential job opportunities (exploring) vs being in a particular job (exploiting).</p>
+
+<p><img src="https://i.ibb.co/Tty4PWy/Screen-Shot-2019-01-18-at-9-47-26-pm.png" alt="alt text" /></p>
+
+<p>Yet another example would be if you are a stock trader. How much time do you spend searching for the best trading strategy (exploring) vs implementing a strategy on the stock market (exploiting).</p>
+
+<p>The reason we consider the exploration vs exploitation idea on the multi armed bandit problem (multi -slot machine problem), is that again remember there is more than one machine and <strong>_each slot machine&rsquo;s is tuned slightly differently</strong>_, such that each slot machine will give payouts (rewards) of cash in different amounts.</p>
+
+<p><strong>So how then do we go about discovering which Bandit pays out the most?</strong></p>
+
+<p>Well, if you have not guessed it already, what we would like to do is spend some time <strong><em>exploring</em></strong> - to see amongst our many slot machines, which slot machine gives the best payout.</p>
+
+<p>When we have discovered which machine gives the best payout, we then want to keep <strong><em>exploiting</em></strong> this machine.</p>
+
+<p>Time for your first RL (baby) algorithm</p>
+
+<p>#The Epsilon-Greedy Algorithm</p>
+
+<p>Simply, the Episilon Greedy Algorithm is this:</p>
+
+<p><img src="https://i.ibb.co/4TPp8h2/Screen-Shot-2019-01-19-at-1-02-05-pm.png" alt="alt text" /></p>
+
+<p>Seriously though, if you did not understand that no dramas at all. The rest of this post is going to be about breaking apart the mathematical notation above into a more human readable format (HRF) :)</p>
+
+<p>Ok so lets break the above apart and take this one step at a time:</p>
+
+<p>#Step 1: Epsilon</p>
+
+<hr />
+
+<p>######Reinforcement Learning Terminology Decoded #2:</p>
+
+<p>According to wikipedia Epsilon is the 5th letter of the Greek alphabet and looks like this:</p>
+
+<p>###ε</p>
+
+<p>Hieroglyphics right?</p>
+
+<hr />
+
+<p>What epsilon is actually used for is the interesting bit.</p>
+
+<p>Lets say we wanted to implement some kind of <strong>Exploration vs. Exploitation</strong> on a problem.</p>
+
+<p>How would we do it?</p>
+
+<p>Lets now examine the multi-armed bandit problem in a little bit more detail, to explain  <strong><em>epsilon</em></strong>, <strong><em>greedy</em></strong> and the reason why we are examining this problem in the first place.</p>
+
+<p>Lets say we have a bandit (slot machine) and that if I pulled the lever on the bandit 50 times, I would get data of the payout of that slot machine that looked like a bell curve like so:</p>
+
+<p><img src="https://i.ibb.co/v4S6XKH/Screen-Shot-2019-01-21-at-7-50-39-am.png" alt="alt text" /></p>
+
+<p><em>Figure 1. Average payout of a slot machine based on the amount of times that the lever has been pulled. For example, we can see that at around the $70 mark the lever on the slot machine has been pulled around 44 times.</em></p>
+
+<p>We can say that our slot machine in the above graph, has an average payout of around $70- as we can see that the middle of the bell curve is roughly centered around the $70 mark.</p>
+
+<hr />
+
+<p>######Reinforcement Learning Terminology Decoded #3:</p>
+
+<p>In machine learning we use another name for the <strong>bell curve</strong> (pictured below) and that name is the &ldquo;<strong>normal distribution</strong>&rdquo;. This is technically more correct as we will see soon.
+A distribution is usually &ldquo;centered&rdquo; around an average number.</p>
+
+<p><img src="https://i.ibb.co/k3vDq8m/Screen-Shot-2019-01-21-at-7-55-09-am.png" alt="alt text" /></p>
+
+<p><em>Figure 2: Normal distribution centered around 100.</em></p>
+
+<hr />
+
+<p>The reason we use the <strong><em>distribution</em></strong> idea to represent our Bandit is because of <strong><em>uncertainty</em></strong>, (a slot machine is meant to be <strong><em>random</em></strong> -  and we would like to discover a pattern in the “random” data if it exists&hellip;).</p>
+
+<p>Each time we pull the lever on our bandit, it gives a different cash payout every time.</p>
+
+<p>So in figure 1 above sometimes it will be $65, sometimes it will be $80, but the average payout over time will be $70. This is the centre of our distribution.</p>
+
+<p>Now let&rsquo;s examine the case of two slot machines.</p>
+
+<p>Each slot machine will each give payouts according to two <strong><em>different normal distributions.</em></strong></p>
+
+<p>What does this mean? Have a look at the image below</p>
+
+<p><img src="https://i.ibb.co/1dsQtvS/Screen-Shot-2019-01-21-at-8-02-59-am.png" alt="alt text" /></p>
+
+<p><em>figure 3, Here we can see that our first bandit, the bandit in blue, had an average value of  70 - that is to say the distribution was centered around 70.</em></p>
+
+    </div>
+
+    
+
+
+
+
+
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.07fbebbbf71b021c8836e1d7ecffa489.js"></script>
+
+  </body>
+</html>
+

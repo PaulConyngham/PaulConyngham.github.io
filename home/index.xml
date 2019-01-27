@@ -30,7 +30,7 @@
     </item>
     
     <item>
-      <title>Recent Posts</title>
+      <title>Blog Posts</title>
       <link>https://PaulConyngham.github.io/home/posts/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +1000</pubDate>
       
@@ -57,7 +57,7 @@
     </item>
     
     <item>
-      <title>Custom Section</title>
+      <title>Teaching</title>
       <link>https://PaulConyngham.github.io/home/teaching/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +1000</pubDate>
       
@@ -67,7 +67,7 @@ To remove this section, either delete content/home/teaching.md or edit the front
     </item>
     
     <item>
-      <title>Recent &amp; Upcoming Talks</title>
+      <title>Recent Talks</title>
       <link>https://PaulConyngham.github.io/home/talks/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +1000</pubDate>
       

@@ -62,8 +62,7 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +1000</pubDate>
       
       <guid>https://PaulConyngham.github.io/home/teaching/</guid>
-      <description>This is an example of using the custom widget to create your own homepage section.
-To remove this section, either delete content/home/teaching.md or edit the frontmatter of the file to deactivate the widget by setting active = false.</description>
+      <description>“Intro to ML”, Pivotal Labs, Sydney Nov 2017 “Tech talk: Machine Learning ”, Kode59 Haugesund, Norway Dec 2017 “Frontiers of Artificial Intelligence”, Facebook , Feb 2018 “The DQN Algorithm”, Blizzard Entertainment, March 2018 “Machine Learning Today”, Web Directions, Sydney International Convention Centre, November 2018</description>
     </item>
     
     <item>

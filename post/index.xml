@@ -12,12 +12,15 @@
     
     
     <item>
-      <title>What the Shell Is a Multi Armed Bandit</title>
-      <link>https://PaulConyngham.github.io/post/what-the-shell-is-a-multi-armed-bandit/</link>
-      <pubDate>Mon, 28 Jan 2019 07:29:01 +1100</pubDate>
+      <title>What the Shell is a Multi Armed Bandit? - An introduction to Reinforcement Learning</title>
+      <link>https://PaulConyngham.github.io/post/what-the-shell-is-a-multi-armed-bandit-guest-starring-the-epsilon-greedy-algorithm/</link>
+      <pubDate>Fri, 22 Feb 2019 20:29:09 +1100</pubDate>
       
-      <guid>https://PaulConyngham.github.io/post/what-the-shell-is-a-multi-armed-bandit/</guid>
-      <description></description>
+      <guid>https://PaulConyngham.github.io/post/what-the-shell-is-a-multi-armed-bandit-guest-starring-the-epsilon-greedy-algorithm/</guid>
+      <description>Guest starring the Epsilon-Greedy Algorithm, by Paul Steven Conyngham Machine learning people love to give fancy names to things so that no one can understand what they are on about.
+For someone relatively new to machine learning, &amp;ldquo;The multi armed bandit problem&amp;rdquo; sounds just like one of these fancy names.
+Fret not however!
+The point of this blog post is to explain exactly what a Bandit is and most importantly, why it is usually used as the starting point for anyone looking at learning Reinforcement Learning.</description>
     </item>
     
   </channel>

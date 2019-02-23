@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Human Algorithms</title>
+    <link>https://PaulConyngham.github.io/project/</link>
+    <description>Recent content in Projects on Human Algorithms</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 Feb 2019 18:56:50 +1100</lastBuildDate>
+    
+	<atom:link href="https://PaulConyngham.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Starai Deep Reinforcement Learning Course</title>
+      <link>https://PaulConyngham.github.io/project/starai-deep-reinforcement-learning-course/</link>
+      <pubDate>Sat, 23 Feb 2019 18:56:50 +1100</pubDate>
+      
+      <guid>https://PaulConyngham.github.io/project/starai-deep-reinforcement-learning-course/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rendering Gym on Colaboratory</title>
+      <link>https://PaulConyngham.github.io/project/rendering-gym-on-colaboratory/</link>
+      <pubDate>Sat, 23 Feb 2019 18:56:44 +1100</pubDate>
+      
+      <guid>https://PaulConyngham.github.io/project/rendering-gym-on-colaboratory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pysc2 on Colaboratory</title>
+      <link>https://PaulConyngham.github.io/project/pysc2-on-colaboratory/</link>
+      <pubDate>Sat, 23 Feb 2019 18:56:36 +1100</pubDate>
+      
+      <guid>https://PaulConyngham.github.io/project/pysc2-on-colaboratory/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

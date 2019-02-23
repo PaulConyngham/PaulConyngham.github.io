@@ -10,6 +10,33 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Starai Deep Reinforcement Learning Course</title>
+      <link>https://PaulConyngham.github.io/project/starai-deep-reinforcement-learning-course/</link>
+      <pubDate>Sat, 23 Feb 2019 18:56:50 +1100</pubDate>
+      
+      <guid>https://PaulConyngham.github.io/project/starai-deep-reinforcement-learning-course/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rendering Gym on Colaboratory</title>
+      <link>https://PaulConyngham.github.io/project/rendering-gym-on-colaboratory/</link>
+      <pubDate>Sat, 23 Feb 2019 18:56:44 +1100</pubDate>
+      
+      <guid>https://PaulConyngham.github.io/project/rendering-gym-on-colaboratory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pysc2 on Colaboratory</title>
+      <link>https://PaulConyngham.github.io/project/pysc2-on-colaboratory/</link>
+      <pubDate>Sat, 23 Feb 2019 18:56:36 +1100</pubDate>
+      
+      <guid>https://PaulConyngham.github.io/project/pysc2-on-colaboratory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>What the Shell is a Multi Armed Bandit? - An introduction to Reinforcement Learning</title>
       <link>https://PaulConyngham.github.io/post/what-the-shell-is-a-multi-armed-bandit-guest-starring-the-epsilon-greedy-algorithm/</link>
       <pubDate>Fri, 22 Feb 2019 20:29:09 +1100</pubDate>

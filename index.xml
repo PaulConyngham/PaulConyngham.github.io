@@ -10,6 +10,76 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>How to Find Your Life Partner Using Machine Learning</title>
+      <link>https://PaulConyngham.github.io/post/how-to-find-your-life-partner-using-machine-learning/</link>
+      <pubDate>Tue, 05 Mar 2019 07:56:25 +1100</pubDate>
+      
+      <guid>https://PaulConyngham.github.io/post/how-to-find-your-life-partner-using-machine-learning/</guid>
+      <description>&lt;p&gt;There is this age old problem in machine learning and it goes something like this.&lt;/p&gt;
+
+&lt;p&gt;Let’s say you are on the hunt for a hot date with the eventual goal of picking up a life partner.&lt;/p&gt;
+
+&lt;p&gt;First you hop on your favourite dating app of choice.&lt;/p&gt;
+
+&lt;p&gt;After chatting to a few people you manage to score yourself a date. The way they were coming on to you so strongly on the first date was a was a bit weird, strike out, you decide that’s it for the online dating person.&lt;/p&gt;
+
+&lt;p&gt;The following week you decide dating apps are kind of lame, so you head out to the bar.&lt;/p&gt;
+
+&lt;p&gt;You manage to work up the courage to approach someone and after talking to them for a bit realise that this person has really bad breath and might not be quite the right person for you.&lt;/p&gt;
+
+&lt;p&gt;Finally, towards the end of the night and after a few drinks, you work up your last bit of courage to go over and talk to an attractive person, who has been looking at you over their shoulder all night.&lt;/p&gt;
+
+&lt;p&gt;You hit it off and get their number. Two years later you are in a relationship and decide to get married, happily, ever after.&lt;/p&gt;
+
+&lt;p&gt;What has any of this got to do with Machine Learning? Well, actually, the Exploration vs Exploitation problem is as old as the field of ML itself.&lt;/p&gt;
+
+&lt;p&gt;That is, how much time do you spend “exploring”  the options available for solving a particular problem, in this example going on dates with people to look for a partner -&lt;/p&gt;
+
+&lt;p&gt;Versus,&lt;/p&gt;
+
+&lt;p&gt;How much time do you spend, ahem, “exploiting” a particular solution to a problem - being in a relationship with someone.&lt;/p&gt;
+
+&lt;p&gt;To make the idea of Exploration vs Exploitation a bit more &lt;a href=&#34;https://www.youtube.com/watch?v=5ZNJPSe1nZs&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;concrete&lt;/strong&gt;&lt;/a&gt;, let us examine a few more examples:&lt;/p&gt;
+
+&lt;p&gt;Take choosing a career - how much time do you spend looking at potential job opportunities - exploring - vs being in a particular job - exploiting.&lt;/p&gt;
+
+&lt;p&gt;Or take being a stock trader, how much time do you spend researching different trading techniques - exploring - before you decide to choose a particular trading stack - exploiting.&lt;/p&gt;
+
+&lt;p&gt;For that matter, take work in general. You could spend time on Facebook, Linkedin, Twitter exploring or you could buckle down and get exploiting the task you should be doing right now.&lt;/p&gt;
+
+&lt;p&gt;We have seen that the problem of Exploration vs Exploitation occurs all over the place &amp;amp; is not limited to Machine Learning.&lt;/p&gt;
+
+&lt;p&gt;However, it just so happens that the Machine Learning world has devised one solution to the Exploration vs Exploitation problem.&lt;/p&gt;
+
+&lt;p&gt;We call the algorithm that solves this problem “Epsilon-Greedy”.&lt;/p&gt;
+
+&lt;p&gt;The name is irrelevant, however the underlying principle is deceptively simple and it is this principle that I would like to share with you in this post.&lt;/p&gt;
+
+&lt;p&gt;The main idea with Epsilon-Greedy is that given any problem, you spend some time exploring all the options that are available to you to solve that problem.&lt;/p&gt;
+
+&lt;p&gt;Once you have found an option that gives you the highest average reward, you continue to exploit that option.&lt;/p&gt;
+
+&lt;p&gt;That’s all there is too it!&lt;/p&gt;
+
+&lt;p&gt;How would the world be if everyone valued the idea of Epsilon-Greedy as a universal principle rather than some obscure algorithm hidden in the pages of text book somewhere? Let’s take a minute to appreciate just how powerful the concept of Epsilon-Greedy really is.&lt;/p&gt;
+
+&lt;p&gt;Imagine if you are a student just starting out your first year of university. If you found that you were not good at a particular subject and you had Epsilon-Greedy as a valued principle, you would not care as much if you successively dropped courses because after all - you are just exploring. After exploring for a while you might just stumble upon a career path that might be more suited to you, which you could exploit - for higher average satisfaction over the course of your life.&lt;/p&gt;
+
+&lt;p&gt;Or even take it back to the dating example used at the start of this post. If you had Epsilon Greedy as one of your principles in your dating toolkit, would it not be so troubling if you knew that first you were going to first try a couple of different date options first before you decided to jump into a relationship with someone?&lt;/p&gt;
+
+&lt;p&gt;Up until now most people have treated machine learning algorithms as essentially obscure mathematical notation to be hauled out of dusty textbooks from time to time to solve case specific issues.&lt;/p&gt;
+
+&lt;p&gt;If we realize that these same algorithms address fundamentally human issues however, such as choosing when to explore and when to exploit, we can start treating these algorithms as fundamental “field tested” principles that exist in nature herself - that we can all adopt &amp;amp; start living our lives by.&lt;/p&gt;
+
+&lt;p&gt;In summary, the key idea to be learnt from the Epsilon-Greedy algorithm is that it really does pay to spend some time discovering and sampling potential options available to solving a particular problem before we go all out and exploit a particular solution to that problem.&lt;/p&gt;
+
+&lt;p&gt;~&lt;/p&gt;
+
+&lt;p&gt;If you would like to deep dive into how the Epsilon-Greedy Algorithm works, feel free to read my other &lt;a href=&#34;https://star-ai.github.io/What-the-Shell-is-a-Multi-Armed-Bandit-Guest-Starring-the-Epsilon-Greedy-Algorithm/&#34; target=&#34;_blank&#34;&gt;much longer post explaining just this&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Starai Deep Reinforcement Learning Course</title>
       <link>https://PaulConyngham.github.io/project/starai-deep-reinforcement-learning-course/</link>
       <pubDate>Sat, 23 Feb 2019 18:56:50 +1100</pubDate>
@@ -34,668 +104,6 @@
       
       <guid>https://PaulConyngham.github.io/project/pysc2-on-colaboratory/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>What the Shell is a Multi Armed Bandit? - An introduction to Reinforcement Learning</title>
-      <link>https://PaulConyngham.github.io/post/what-the-shell-is-a-multi-armed-bandit-guest-starring-the-epsilon-greedy-algorithm/</link>
-      <pubDate>Fri, 22 Feb 2019 20:29:09 +1100</pubDate>
-      
-      <guid>https://PaulConyngham.github.io/post/what-the-shell-is-a-multi-armed-bandit-guest-starring-the-epsilon-greedy-algorithm/</guid>
-      <description>
-
-&lt;hr /&gt;
-
-&lt;h5 id=&#34;guest-starring-the-epsilon-greedy-algorithm-by-paul-steven-conyngham&#34;&gt;Guest starring the Epsilon-Greedy Algorithm, by Paul Steven Conyngham&lt;/h5&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/N9ff6tt/what-the-shell-by-paul.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Machine learning people love to give fancy names to things so that no one can understand what they are on about.&lt;/p&gt;
-
-&lt;p&gt;For someone relatively new to machine learning, &amp;ldquo;The multi armed bandit problem&amp;rdquo; sounds just like one of these fancy names.&lt;/p&gt;
-
-&lt;p&gt;Fret not however!&lt;/p&gt;
-
-&lt;p&gt;The point of this blog post is to explain exactly what a Bandit is and most importantly, why it is usually used as the starting point for anyone looking at learning Reinforcement Learning.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;post-overview&#34;&gt;Post Overview:&lt;/h2&gt;
-
-&lt;p&gt;In this post I am going to aim to teach you:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Some core Reinforcement Learning ideas such as the multi-armed bandit, exploration vs. exploitation &amp;amp; the epsilon greedy algorithm.&lt;/li&gt;
-&lt;li&gt;Introduce you to OpenAi gym and why it is important.&lt;/li&gt;
-&lt;li&gt;A programming exercise to help you solidify your understanding of the discussed ideas.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;So then, what the shell is a bandit?&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/xHx2jFt/Screen-Shot-2019-01-18-at-8-29-44-pm.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This.&lt;/p&gt;
-
-&lt;p&gt;A bandit is an old fashioned american name for what we usually call a &amp;ldquo;slot machine&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;Here in Australia we like to call it the &amp;ldquo;pokies&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;Great, but what the shell is a multi armed bandit?&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Simply, this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/Cmm0NLn/Screen-Shot-2019-01-18-at-8-38-17-pm.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;A whole bunch of &amp;ldquo;bandits&amp;rdquo; stacked together such there are many &amp;ldquo;arms&amp;rdquo; to pull.&lt;/p&gt;
-
-&lt;p&gt;This is where the &amp;ldquo;multi armed&amp;rdquo; part comes in.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/8K8pbwx/multiararmedbandit-what-the-shell.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Hold up.&lt;/p&gt;
-
-&lt;p&gt;Why are we talking about slot machines with regards to machine learning?&lt;/p&gt;
-
-&lt;p&gt;Well, one definition for Reinforcement Learning, the subfield of machine learning that we are talking about here deals with:&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;Finding the optimal strategy to solving a problem in the face of massive uncertainty.&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s see why defining the multi-armed bandit this way is important by considering an example.&lt;/p&gt;
-
-&lt;p&gt;~&lt;/p&gt;
-
-&lt;p&gt;Say you wanted to drive your car from your home to your work.&lt;/p&gt;
-
-&lt;p&gt;When you wake up in the morning, you have no idea how the traffic lights will change or what the other cars will be doing on your way to work.&lt;/p&gt;
-
-&lt;p&gt;You could encounter 5 cars that delay you at a roundabout, or you could encounter 10 red traffic lights in a row.&lt;/p&gt;
-
-&lt;p&gt;In order to find this information out, you would have to actually drive the route to work and gather the data.&lt;/p&gt;
-
-&lt;p&gt;So, not knowing what the traffic will be doing &lt;em&gt;when you wake up in the morning&lt;/em&gt;  is the uncertainty part in our definition above.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/Pr2wZ0t/Screen-Shot-2019-01-18-at-8-58-08-pm.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We also need a &lt;strong&gt;&lt;em&gt;plan of what we will do&lt;/em&gt;&lt;/strong&gt; once we encounter the intersections, roundabouts &amp;amp; traffic lights as we drive our car on our way to work.&lt;/p&gt;
-
-&lt;p&gt;This plan or &lt;strong&gt;&lt;em&gt;strategy&lt;/em&gt;&lt;/strong&gt; is what reinforcement learning aims to figure out.&lt;/p&gt;
-
-&lt;p&gt;Even more specifically, reinforcement learning attempts to learn the &lt;strong&gt;&lt;em&gt;optimal strategy&lt;/em&gt;&lt;/strong&gt; -  that is to say, the best possible strategy for a specific task - in this case, the best way of driving through all the obstacles of traffic lights, roundabouts etc from home to work.&lt;/p&gt;
-
-&lt;p&gt;This is the &lt;strong&gt;&lt;em&gt;strategy&lt;/em&gt;&lt;/strong&gt; part in our definition above.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h6 id=&#34;reinforcement-learning-terminology-decoded-1&#34;&gt;Reinforcement Learning Terminology Decoded #1:&lt;/h6&gt;
-
-&lt;p&gt;In reinforcement learning the name given to the strategy that we are following to solve a given problem is called a &lt;strong&gt;&lt;em&gt;policy&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Following the previous example of driving to work. An example of a &lt;strong&gt;&lt;em&gt;policy&lt;/em&gt;&lt;/strong&gt; (strategy) would be driving as fast as possible to work.&lt;/p&gt;
-
-&lt;p&gt;Another example of a &lt;strong&gt;&lt;em&gt;policy&lt;/em&gt;&lt;/strong&gt; would be to ignore all red lights (again this could be another strategy).&lt;/p&gt;
-
-&lt;p&gt;Of course your policy could also be something boring. For example, only moving on green traffic lights, stopping for all other cars at roundabouts - like I hope you are doing.&lt;/p&gt;
-
-&lt;p&gt;Summarizing, &lt;strong&gt;a policy&lt;/strong&gt; is the strategy that we use &lt;strong&gt;to take incoming information&lt;/strong&gt; and &lt;strong&gt;process it into actions to be taken in the environment.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Let us watch a couple of people following the &amp;ldquo;policy&amp;rdquo; of not stopping at red traffic lights.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=OJnZVjiscq4&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://i.ibb.co/FDZXRzS/Screen-Shot-2019-02-11-at-8-43-00-pm.png&#34; alt=&#34;IMAGE ALT TEXT HERE&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Video 1: Here we can see the drivers following the policy of driving through the intersection when observing a red traffic light. :)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Now we know that we are dealing with finding the best strategies -&lt;em&gt;or policies&lt;/em&gt;- in the face of unknown conditions - &lt;em&gt;or uncertainty.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The multi armed bandit problem is usually brought up as the starting point of most Reinforcement Learning (RL) text books because it introduces several core RL ideas.&lt;/p&gt;
-
-&lt;p&gt;The first of which is that in slot machines - you are dealing with &lt;em&gt;uncertainty&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;In other words - if you go up to a slot machine and pull the lever, you have no idea &lt;strong&gt;&lt;em&gt;when&lt;/em&gt;&lt;/strong&gt; you are going to get a cash payout. You also have no idea &lt;strong&gt;&lt;em&gt;how much&lt;/em&gt;&lt;/strong&gt; that cash payout might be.&lt;/p&gt;
-
-&lt;p&gt;We also examine the multi armed bandit as our &amp;ldquo;toy&amp;rdquo; problem for explaining Reinforcement Learning because it teaches us the second core concept with regards to RL.&lt;/p&gt;
-
-&lt;p&gt;That is, what to do when we have more than one option for solving a problem.&lt;/p&gt;
-
-&lt;p&gt;In the multi-armed Bandit problem there are many slot machine levers to pull. So - we have many options. Just like you do when driving on your way to work.&lt;/p&gt;
-
-&lt;p&gt;How then do we decide upon the right strategy for how &amp;amp; when to pull the many different levers of our multi-armed bandit slot machine scenario, or in terms of our machine learning terminology from before - a “policy” for pulling these levers?&lt;/p&gt;
-
-&lt;p&gt;Summarizing, the bandit problem in a nutshell:&lt;/p&gt;
-
-&lt;p&gt;What do we do when we have more than one slot machine to choose from and we would like to know which slot machine is going to give us the highest average payout or &lt;strong&gt;&lt;em&gt;reward&lt;/em&gt;&lt;/strong&gt; over time. In other words, which slot machine is the best choice?&lt;/p&gt;
-
-&lt;p&gt;Lets get cracking on this problem by introducing another Machine Learning idea and your first (baby) Reinforcement Learning Algorithm.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h1 id=&#34;exploration-vs-exploitation&#34;&gt;Exploration vs Exploitation&lt;/h1&gt;
-
-&lt;p&gt;There is this age old problem in life and it goes something like this.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/FqrfDc7/itsamatch-1.jpg&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Let’s say you are on the hunt for a hot date with the eventual goal of picking up a life partner.&lt;/p&gt;
-
-&lt;p&gt;First you hop on your favourite dating app of choice.&lt;/p&gt;
-
-&lt;p&gt;After chatting to a few people you manage to score yourself a hot date. The way they were coming on to you so strongly on the first date was a was a bit weird, strike out, you decide that&amp;rsquo;s it for the dating app person.&lt;/p&gt;
-
-&lt;p&gt;The following week you decide dating apps are kind of lame, so you head out to the bar.&lt;/p&gt;
-
-&lt;p&gt;You manage to work up the courage to approach someone and after talking to them for a bit begin to realise that this person has really bad breath and might not be quite the right person for you.&lt;/p&gt;
-
-&lt;p&gt;Finally, towards the end of the night and after a few drinks, you work up your last bit of courage to go over and talk to an attractive person, who has been looking at you over their shoulder all night.&lt;/p&gt;
-
-&lt;p&gt;You hit it off and get their number. Two years later you are in a happy relationship and decide to get married, happily, ever after.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/dktFB3V/in-love-1071325-960-720.jpg&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;What was just described above is an age old problem in machine learning.&lt;/p&gt;
-
-&lt;p&gt;How much time do you spend &lt;strong&gt;&amp;ldquo;exploring&amp;rdquo;&lt;/strong&gt; - going on dates with people looking for a partner etc,&lt;/p&gt;
-
-&lt;p&gt;Versus,&lt;/p&gt;
-
-&lt;p&gt;How much time do you spend, ahem, &lt;strong&gt;&amp;ldquo;exploiting&amp;rdquo;&lt;/strong&gt; - being in a relationship with someone etc.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Lets make the topic of exploration vs exploitation more &lt;a href=&#34;https://www.youtube.com/watch?v=5ZNJPSe1nZs&#34; target=&#34;_blank&#34;&gt;concrete&lt;/a&gt; with a few more examples.&lt;/p&gt;
-
-&lt;p&gt;Another example of exploration versus exploitation is how much time you spend looking at potential job opportunities (exploring) vs being in a particular job (exploiting).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/Tty4PWy/Screen-Shot-2019-01-18-at-9-47-26-pm.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Yet another example would be if you are a stock trader. How much time do you spend searching for the best trading strategy (exploring) vs implementing a strategy on the stock market (exploiting).&lt;/p&gt;
-
-&lt;p&gt;The reason we consider the exploration vs exploitation idea on the multi armed bandit problem, is that remember there is more than one machine and &lt;strong&gt;&lt;em&gt;each slot machine&amp;rsquo;s is tuned slightly differently&lt;/em&gt;&lt;/strong&gt;, such that each slot machine will give different average cash payouts.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;How then do we go about discovering which Bandit slot machine pays out the most?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;If you have not guessed it already, what we would like to do is spend some time &lt;strong&gt;&lt;em&gt;exploring&lt;/em&gt;&lt;/strong&gt; - to see amongst our many slot machines, which slot machine gives the best average payout.&lt;/p&gt;
-
-&lt;p&gt;When we have discovered which machine gives the best average payout, we then want to keep &lt;strong&gt;&lt;em&gt;exploiting&lt;/em&gt;&lt;/strong&gt; this machine.&lt;/p&gt;
-
-&lt;p&gt;Ok then. Time for your first RL (baby) algorithm&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;z&lt;/p&gt;
-
-&lt;h1 id=&#34;the-epsilon-greedy-algorithm&#34;&gt;The Epsilon-Greedy Algorithm&lt;/h1&gt;
-
-&lt;p&gt;Simply, the Episilon Greedy Algorithm is this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/4TPp8h2/Screen-Shot-2019-01-19-at-1-02-05-pm.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Seriously though, if you did not understand that no dramas at all.&lt;/p&gt;
-
-&lt;p&gt;The rest of this post is going to be about breaking apart the mathematical notation above into a more human readable format :).&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s do it.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h5 id=&#34;reinforcement-learning-terminology-decoded-2&#34;&gt;Reinforcement Learning Terminology Decoded #2:&lt;/h5&gt;
-
-&lt;p&gt;In machine learning we use another name for the &lt;strong&gt;bell curve&lt;/strong&gt; (pictured below). That name is the &amp;ldquo;&lt;strong&gt;normal distribution&lt;/strong&gt;&amp;rdquo;. This is technically more correct as we will see soon.&lt;/p&gt;
-
-&lt;p&gt;Key idea: &amp;ldquo;A normal distribution is  &amp;ldquo;centered&amp;rdquo; around an average number.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/k3vDq8m/Screen-Shot-2019-01-21-at-7-55-09-am.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Figure 2: Normal distribution centered around 100.&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Say we wanted to implement some kind of &lt;strong&gt;Exploration vs. Exploitation&lt;/strong&gt; on a problem.&lt;/p&gt;
-
-&lt;p&gt;How would we do it?&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s examine the multi-armed bandit problem in a little bit more detail, to explain what &lt;strong&gt;&lt;em&gt;epsilon&lt;/em&gt;&lt;/strong&gt; &amp;amp; &lt;strong&gt;&lt;em&gt;greedy&lt;/em&gt;&lt;/strong&gt; is and why we are examining the multi armed bandit problem in the first place.&lt;/p&gt;
-
-&lt;p&gt;Say we have a bandit slot machine and that if I pulled the lever on the bandit 300 times, I would get data of the payout of that slot machine that looked like a bell curve like so:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/v4S6XKH/Screen-Shot-2019-01-21-at-7-50-39-am.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Figure 1. Average payout of a slot machine based on the amount of times that the lever has been pulled. For example, we can see that at around the $70 mark the lever on the slot machine has been pulled around 44 times.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;A slot machine is meant to be &lt;strong&gt;&lt;em&gt;random&lt;/em&gt;&lt;/strong&gt; -  and we would like to discover a pattern in the “random” data if it exists.&lt;/p&gt;
-
-&lt;p&gt;We use the idea of a &lt;strong&gt;&lt;em&gt;distribution&lt;/em&gt;&lt;/strong&gt; to represent our Bandit&amp;rsquo;s distribution of possible cash payouts. In essence the distribution is representing &lt;strong&gt;&lt;em&gt;uncertainty&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Every time we pull our lever on the bandit, it will give a different cash payout.&lt;/p&gt;
-
-&lt;p&gt;In figure 1, sometimes it will be 65 dollars, sometimes it will be 80, but the average payout over time will be $70.&lt;/p&gt;
-
-&lt;p&gt;The middle of the bell graph in figure 1 is centered around the 70 dollar mark. We can therefore say that our slot machine in the graph in figure 1 has an average payout of around 70 dollars.&lt;/p&gt;
-
-&lt;p&gt;Let us now examine the case of two slot machines.&lt;/p&gt;
-
-&lt;p&gt;Each slot machine will each give payouts according to two &lt;strong&gt;&lt;em&gt;different normal distributions.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;What does this mean? Have a look at the image below:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/1dsQtvS/Screen-Shot-2019-01-21-at-8-02-59-am.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Figure 3, Here we can see that our first bandit, the bandit in blue,  which had an average value of  70 - is centered around the 70 dollar mark.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The bandit in pink in &lt;strong&gt;bandit #2&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;We &lt;strong&gt;&lt;em&gt;sample&lt;/em&gt;&lt;/strong&gt; &lt;strong&gt;Bandit #2&lt;/strong&gt; by pulling the lever on Bandit #2 over and over and collect new data on how Bandit #2 performs, seen in figure 3.&lt;/p&gt;
-
-&lt;p&gt;When plotted, we can see that bandit #2 has a &lt;strong&gt;&lt;em&gt;different distribution&lt;/em&gt;&lt;/strong&gt; and has a average payout centred around the $65 mark.&lt;/p&gt;
-
-&lt;p&gt;We have now introduced two bandits, bandit #1 &amp;amp; bandit #2.&lt;/p&gt;
-
-&lt;p&gt;We have also learned that each bandit has a different distribution.&lt;/p&gt;
-
-&lt;p&gt;Why is this important?&lt;/p&gt;
-
-&lt;p&gt;By “sampling” each bandit and building distributions, &lt;strong&gt;we were able to determine which one of our bandits, on average, paid out the most money.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The answer, if you have not guessed it already, is that Bandit #1 wins - with an average payout of 70 dollars as opposed to bandit #2, only paying out on average 65 dollars.&lt;/p&gt;
-
-&lt;p&gt;Linking back to what we talked about earlier, what we were doing by sampling each bandit and building distributions was &lt;strong&gt;doing the exploration phase of the Epsilon Greedy algorithm.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;In summary,&lt;/p&gt;
-
-&lt;p&gt;Given a problem with many options.&lt;/p&gt;
-
-&lt;p&gt;What we would like to do is explore all the options available to us by randomly sampling between the different options, over and over until we start to build up a distribution of data for each option.&lt;/p&gt;
-
-&lt;p&gt;So, gather data on option 1 (Bandit #1), then a little bit of data on option 2 (Bandit #2) over and over until we have built distributions for all of our options.&lt;/p&gt;
-
-&lt;p&gt;Then, we calculate the average seperately for each individual distribution we have gathered to discover the best option.&lt;/p&gt;
-
-&lt;p&gt;Once we have discovered the best option we can go &lt;strong&gt;&lt;em&gt;&amp;ldquo;greedy&amp;rdquo;&lt;/em&gt;&lt;/strong&gt; and continue to &lt;strong&gt;exploit it.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s now see where &lt;strong&gt;Epsilon&lt;/strong&gt; comes in.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h1 id=&#34;epsilon&#34;&gt;Epsilon&lt;/h1&gt;
-
-&lt;hr /&gt;
-
-&lt;h6 id=&#34;reinforcement-learning-terminology-decoded-3&#34;&gt;Reinforcement Learning Terminology Decoded #3:&lt;/h6&gt;
-
-&lt;p&gt;According to wikipedia Epsilon is the 5th letter of the Greek alphabet and looks like this:
-&amp;nbsp;&lt;/p&gt;
-
-&lt;h1 id=&#34;ε&#34;&gt;ε&lt;/h1&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Hieroglyphics right? Epsilon is a greek letter. But what epsilon is used for is the interesting bit.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Epsilon-greedy is a mechanism used to decide which option to exploit.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;When &lt;strong&gt;&lt;em&gt;sampling&lt;/em&gt;&lt;/strong&gt; Epsilon controls the ratio between the amount of time we spend &lt;strong&gt;exploring&lt;/strong&gt; vs how much time we spend &lt;strong&gt;exploiting&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Think of epsilon as a volume knob, which you can turn that controls the amount of exploration you do versus the amount of exploitation.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/9spLt4H/Screen-Shot-2019-02-11-at-7-33-20-am.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Figure 4, Epsilon can be thought of a volume knob. Initially epsilon is high and exploration is maximised with a value of 10, but as time progresses we &amp;ldquo;turn&amp;rdquo; the volume knob down until it is low and exploitation is maxised having a value of 1. In the illustration above we are scaling from 10 to 1. In practise we usually scale from 1 to 0&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Initially we want to explore as much as possible to discover all the options available to us. To do this we set Epsilon to one.&lt;/p&gt;
-
-&lt;p&gt;So when ε = 1, exploration is maximised.&lt;/p&gt;
-
-&lt;p&gt;and when ε = 0, exploitation is maximised.&lt;/p&gt;
-
-&lt;p&gt;How then do we go from an epsilon of 1 down to 0?&lt;/p&gt;
-
-&lt;p&gt;Well, one way to do it is to choose a mathematical function to control Epsilon.&lt;/p&gt;
-
-&lt;p&gt;There are many mathematical functions you can use to control Epsilon. However in this example we are going control Epsilon using a linear function&amp;hellip;or more commonly known as a straight line.&lt;/p&gt;
-
-&lt;p&gt;Think of our &lt;strong&gt;linear function&lt;/strong&gt; &lt;strong&gt;as the volume knob controlling the ratio between exploration and exploitation.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h5 id=&#34;here-we-derive-a-simple-linear-way-of-controlling-epsilon-skip-this-part-if-you-do-not-care-about-the-maths&#34;&gt;Here we derive a simple linear way of controlling Epsilon. Skip this part if you do not care about the maths.&lt;/h5&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;From high school mathematics, a straight line has the form:&lt;/p&gt;
-
-&lt;p&gt;(1.)   $y = mx + c ​$&lt;/p&gt;
-
-&lt;p&gt;where m equals the gradient of the line, and c is the Y axis intercept.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/dPVsRNb/Screen-Shot-2019-02-11-at-7-37-38-am.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Figure 5, A straight line plotted. Here the variable C (the Y axis intercept) has been set to zero.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;If we choose a straight line as our function for controlling Epsilon then our function f(x) becomes:&lt;/p&gt;
-
-&lt;p&gt;(2.) $f(x) = mx + c$&lt;/p&gt;
-
-&lt;p&gt;We know we would like to start off with exploration maximised, so equal to one. We would also like to scale down Epsilon over time.  One way to control Epsilon would then be to subtract a straight line from one. Epsilon can then be defined as:&lt;/p&gt;
-
-&lt;p&gt;(3.) $ε = 1 - f(x)​$&lt;/p&gt;
-
-&lt;p&gt;Substituing equation 2 yields:&lt;/p&gt;
-
-&lt;p&gt;(4.) $ε = 1 - (mx + c) $&lt;/p&gt;
-
-&lt;p&gt;If we replace x for t (time) this gives us our final equation:&lt;/p&gt;
-
-&lt;p&gt;(5.) $ε = 1 - mt - c ​$&lt;/p&gt;
-
-&lt;p&gt;Finally, if we set c to zero, we get the final diagram below. Exactly the type of operation that we are after- scaling epsilon from 1 to 0:&lt;/p&gt;
-
-&lt;p&gt;(6.) $ε = 1 - mt $&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/hm7nMtx/Screen-Shot-2019-02-11-at-7-39-19-am.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Figure 6, Epsilon decreasing linearly over time.&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;So to summarize the epsilon-greedy process, via &lt;strong&gt;sampling&lt;/strong&gt; we slowly start to figure out what is the best possible option to use to solve a problem. Simultaneously,  whilst we are sampling &lt;strong&gt;we turn down the Epsilon volume knob.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Turning down  Epsilon decreases the amount of exploration we are doing and starts focusing in on the best solution we have found so far to solve a given problem. Aka going &lt;strong&gt;&amp;ldquo;greedy&amp;rdquo;.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Taking this back to our toy problem of bandits, we first start exploring by pulling different levers at random between Bandit # 1 and Bandit # 2.&lt;/p&gt;
-
-&lt;p&gt;Following this random sampling process, we start to build distributions of our different bandit options and see which bandit is going to give us the highest average reward in the form of cash payout.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Simultanously as we are sampling, we start to decrease Epsilon and start focusing on the bandit option that is going to give us the highest average cash reward.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;In the video below I run though a visual example of the Epsilon-Greedy algorithm running in practise.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://youtu.be/bg65gXhYldE?t=395&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://i.ibb.co/Bcf4GqH/Screen-Shot-2019-02-11-at-8-13-31-am.png&#34; alt=&#34;IMAGE ALT TEXT HERE&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Video 2: pulling it all together, lets run the epsilon greedy algorithm&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h1 id=&#34;the-final-piece-of-the-puzzle-the-reward-averaging-sampling-learning-rule&#34;&gt;The final piece of the puzzle: the Reward-Averaging Sampling learning rule.&lt;/h1&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;In reinforcement learning we like to refer to our algorithm systems as &amp;ldquo;agents&amp;rdquo;. So far we have learned about the &amp;ldquo;Epsilon-Greedy&amp;rdquo; agent.&lt;/p&gt;
-
-&lt;p&gt;We have seen that it is a synthesis of a purely exploratory agent and a completely greedy agent.&lt;/p&gt;
-
-&lt;p&gt;In the multiarmed bandit slot machine problem a &lt;strong&gt;&lt;em&gt;purely exploratory agent&lt;/em&gt;&lt;/strong&gt; would sample all the different bandits options available evenly - building a distribution for each bandit.&lt;/p&gt;
-
-&lt;p&gt;However this has the downside that the agent never gets to use its knowledge of the best option it has discovered so far.&lt;/p&gt;
-
-&lt;p&gt;One way to think of a &lt;strong&gt;&lt;em&gt;purely exploratory agent&lt;/em&gt;&lt;/strong&gt; is a student that goes to University and starts 5 different degrees - but quits after 1 semester in all of them - never sticking it out to see which degree might have been best for them, or in other words, giving them the highest average reward. ;)&lt;/p&gt;
-
-&lt;p&gt;However, &lt;strong&gt;&lt;em&gt;A purely greedy agent&lt;/em&gt;&lt;/strong&gt;  would choose a bandit and stick to it&amp;rsquo;s choice for all eternity.&lt;/p&gt;
-
-&lt;p&gt;A purely greedy agent can be though of as being very &amp;ldquo;narrow minded&amp;rdquo; as it will not try other bandit options to see if they provide better average long term reward.&lt;/p&gt;
-
-&lt;p&gt;To get the best of both worlds, the Epsilon-greedy agent is designed to &lt;strong&gt;&lt;em&gt;explore&lt;/em&gt;&lt;/strong&gt; at an &lt;strong&gt;&lt;em&gt;Epsilon chance&lt;/em&gt;&lt;/strong&gt; whilst the rest of the time it goes &lt;strong&gt;&lt;em&gt;greedy&lt;/em&gt;&lt;/strong&gt; on the best option it had discovered so far.&lt;/p&gt;
-
-&lt;p&gt;In our example, we have seen that we are able to scale the Epsilon chance using a linear function to control the amount of time we spend exploring versus the amount of time we spend going greedy.&lt;/p&gt;
-
-&lt;p&gt;The idea here is that the Greedy mechanism helps the agent exploit the best option it has discovered so far, whilst the small amount of exploration leftover ensures that our agent keeps searching the other options available - to prove that there are &lt;strong&gt;&lt;em&gt;not even better options out there.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The last remaining piece of the puzzle in the Epsilon-Greedy algorithm is how do we assign the idea of &amp;ldquo;value&amp;rdquo; to each of our different bandits options.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h6 id=&#34;reinforcement-learning-terminology-decoded-4&#34;&gt;Reinforcement Learning Terminology Decoded #4:&lt;/h6&gt;
-
-&lt;h3 id=&#34;q-values&#34;&gt;Q Values&lt;/h3&gt;
-
-&lt;p&gt;Say we are at a single slot machine. We pull the slot machine&amp;rsquo;s lever, and the shapes on the slot machines screen begin to whur! After a small amount of time the characters stop. We see &amp;ldquo;apple apple pear&amp;rdquo;. Unfortunately, no money comes out of the machine.&lt;/p&gt;
-
-&lt;p&gt;In RL, we refer to the information on the slot machine&amp;rsquo;s screen - &amp;ldquo;apple apple pear&amp;rdquo;- as &lt;strong&gt;&lt;em&gt;State&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;The &lt;strong&gt;&lt;em&gt;Action&lt;/em&gt;&lt;/strong&gt; we took was pulling the lever.&lt;/p&gt;
-
-&lt;p&gt;The assignment of reward to this State-Action pair combo is what we call a &lt;strong&gt;&lt;em&gt;Q-Value&lt;/em&gt;&lt;/strong&gt;. Q in this case just stands for Quality.&lt;/p&gt;
-
-&lt;p&gt;In our example we take an &lt;strong&gt;action&lt;/strong&gt; and pull the lever on the slot machine. The information we get back as a result of this action is &amp;ldquo;apple apple pear&amp;rdquo; and we refer to this information as &lt;strong&gt;&lt;em&gt;State&lt;/em&gt;&lt;/strong&gt;. The value of this State-Action pair is the resulting reward. So in this case our cash payout was zero. Therefore our Q value for this State-Action pair is 0.&lt;/p&gt;
-
-&lt;p&gt;The mathematical notation for assignment of a Q value looks like this:&lt;/p&gt;
-
-&lt;p&gt;$Q(s,a) = 0$&lt;/p&gt;
-
-&lt;p&gt;Where s &amp;amp; a represent state &amp;amp; action respectively.&lt;/p&gt;
-
-&lt;p&gt;On a final note the definition of Q values above is not quite the entire story, but we will get to why that is soon.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s say we pull the lever on one of our slot machine systems. We can assign a name to this action- lets call it A1.&lt;/p&gt;
-
-&lt;p&gt;The result from our action- A1- is that we see new information from the slot machine system and encounter a reward      - which we can call R1.&lt;/p&gt;
-
-&lt;p&gt;Given some state of the multi-slot machine bandit system we can specify a mathematical function to define the long term average reward. In Reinforcement Learning, we also like to call the &lt;em&gt;average&lt;/em&gt; in this scenario &lt;strong&gt;&lt;em&gt;&amp;ldquo;the expected value&amp;rdquo;.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Given many actions, or pulls of our lever on the bandit, the &lt;em&gt;expected&lt;/em&gt; Q value or average over time for any one bandit choice, can be given by:&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h2 id=&#34;q-n-a-frac-1-n-r1-r2-r3-1&#34;&gt;$Q_{n}(a) = \frac{1}{n}(r1 + r2 +r3)  .(1) $&lt;/h2&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;Where:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Q&lt;/strong&gt;  is our Q Value standing for &lt;strong&gt;Quality&lt;/strong&gt;, this is an arbitary naming convention&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;n&lt;/strong&gt; stands for &lt;strong&gt;the number of times that bandit (or state) has been visited&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;r&lt;/strong&gt; is reward from visiting a bandit, n many times&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;So for example, say we sample bandit #1, 3 times.&lt;/p&gt;
-
-&lt;p&gt;This means that we get three different rewards r1, r2 &amp;amp; r3.&lt;/p&gt;
-
-&lt;p&gt;Because we visited bandit#1 3 times we also know that n = 3&lt;/p&gt;
-
-&lt;p&gt;Therefore:&lt;/p&gt;
-
-&lt;h2 id=&#34;q-1-n-r1-r2-r3-2&#34;&gt;$Q = (1/n)*(r1+r2+r3) .(2)$&lt;/h2&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;substituting 3 for n gives us:&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h2 id=&#34;q-1-3-r1-r2-r3-3&#34;&gt;$Q = (&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;)*(r1+r2+r3) .(3)$&lt;/h2&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Equation 3:  the total expected reward or average, for a bandit option that has been &amp;ldquo;pulled&amp;rdquo; three times.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;By pulling the lever, we are sampling our Bandit # 1,  3 times. As a result, we get 3 different rewards. We calculate the average reward for Bandit #1 and this gives us our Q value associated with that Bandit. We now know the &amp;ldquo;Quallity&amp;rdquo; of Bandit #1. Remember in machine learning in general we like to call the &lt;strong&gt;&lt;em&gt;average&lt;/em&gt;&lt;/strong&gt; the &lt;a href=&#34;https://en.wikipedia.org/wiki/Expected_value&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;&lt;em&gt;&amp;ldquo;total expected reward.&amp;rdquo;&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;We just worked out the average or expected value, for Bandit #1.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Now lets say we wanted to keep track of the total expected reward of another bandit, say &lt;strong&gt;&lt;em&gt;Bandit #2.&lt;/em&gt;&lt;/strong&gt; In order to work out the average reward for &lt;strong&gt;bandit #2,&lt;/strong&gt; we will have to keep track of all of &lt;strong&gt;Bandit 2&amp;rsquo;s&lt;/strong&gt; reward variables &amp;amp; number of times it has been visited in &lt;em&gt;a seperate table&lt;/em&gt; to those of &lt;strong&gt;bandit #1.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Like so:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/4J1SmFq/Screen-Shot-2019-02-21-at-7-55-55-am.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Table 1: Each Bandit has a seperate associated Q value, which we update individually each time that bandit is sampled.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;In a real life multi armed bandit scenario, we would have to keep track of many reward variables the longer our agent is run.&lt;/p&gt;
-
-&lt;p&gt;For 8 &amp;ldquo;samples&amp;rdquo; of our bandit this would looks like this:&lt;/p&gt;
-
-&lt;p&gt;$ Q = (&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;8&lt;/sub&gt;)*(r1+r2+r3+r4+r5+r6+r7+r8) &amp;hellip;$&lt;/p&gt;
-
-&lt;p&gt;If we were to continue to run this algorithm for a while, you can quickly see that we would run out of computer memory.&lt;/p&gt;
-
-&lt;p&gt;In order to reduce the amount of memory that is in use, we can use some mathematical trickery to compress the above equation, such that when we update our Q value with every visit to the bandit our formula becomes:&lt;/p&gt;
-
-&lt;h2 id=&#34;q-n-1-a-q-n-a-frac-1-n-1-r-n-1-q-n-a-4&#34;&gt;$ Q&lt;em&gt;{n+1}(a) = Q&lt;/em&gt;{n}(a) + \frac{1}{n+1}(r&lt;em&gt;{n+1}-  Q&lt;/em&gt;{n}(a))  .(4) $&lt;/h2&gt;
-
-&lt;p&gt;Where:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;$ Q_{n+1}(a)  $ is the update to our Q table&amp;rsquo;s value for a specific bandit, say bandit #1&lt;/li&gt;
-&lt;li&gt;$ Q_{n}(a) $ is the current value in our Q table for a specific bandit&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;n +1&lt;/strong&gt; is the number of times that bandit (or state) has been visited. There is a &amp;ldquo;+1&amp;rdquo; here to stop a divide by zero error at the intialization of the algorithm.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;r+1&lt;/strong&gt; is the updated reward from out latest sample of the bandit.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Finally, now that we have calculated our table of Q values, we need to select from our table the Bandit with the highest average payout.&lt;/p&gt;
-
-&lt;p&gt;Again, we are selecting the Bandit with the highest average payout as our &amp;ldquo;choice&amp;rdquo; amoungst the many options of Bandits that are available to us because it is the best choice we have discovered so far.&lt;/p&gt;
-
-&lt;p&gt;We do this by something that sounds like a super hero - using the argmax function.&lt;/p&gt;
-
-&lt;p&gt;Argmax stands for maximum argument and simpy put, means that given a choice of a whole bunch of numbers, say 1, 2, 3 - to choose the biggest number in the set, in this case the argmax of our set is 3.&lt;/p&gt;
-
-&lt;p&gt;If we were to take the argmax of our table 1 from before &amp;amp; substituting Q1=1, Q2=2 &amp;amp; Q3=3, then taking the argmax would just be the selection of the highest value in the table, the red square, like so:&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/QFKJ5rn/Screen-Shot-2019-02-22-at-8-12-37-am.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;If we continue to run our Epsilon Greedy agent for a while on a problem, say the multiarmed bandit, as discussed before the values of our bandit options in our Q table change. We then retake the argmax, and viola! once again find the biggest value in our set.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.ibb.co/tLNh3JK/Screen-Shot-2019-02-22-at-8-19-15-am.png&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The Reward-Averaging Sampling learning rule is then the heart of the epsilon greedy algorithm, or the forumula we use to update our Q table, &lt;strong&gt;you have to use this code in the upcoming exercise to make the Epsilon-Greedy agent work.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;In summary, Epsilon Greedy is a powerful method for when you have a whole bunch of options, whose reward distribution you do not know &amp;amp; are able to find the optimal reward distribution using sampling.&lt;/p&gt;
-
-&lt;p&gt;The important thing to take away is that you can replace the Bandit problem with any problem which has different options which have hidden distributions. For example - an email marketing  campaign, and applying the exact same methods, determine the best products to display in that email campaign.&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;h1 id=&#34;enter-openai-gym&#34;&gt;&lt;strong&gt;Enter OpenAi Gym.&lt;/strong&gt;&lt;/h1&gt;
-
-&lt;hr /&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;What I cannot create, I do not understand&amp;rdquo; - Richard Feynman.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;We are going to make extensive use of Gym in the accompanying programming exercise to this blog post. I highly suggest you have a crack at implementing Epsilon-Greedy on a multi-armed bandit scenario, as whilst I hope you may have gained the intuitiion of how the Multi Armed Bandit problem &amp;amp; Epsilon-Greedy Algorithm works in the explanation above - the best way to understand it is to build it yourself.&lt;/p&gt;
-
-&lt;p&gt;Only 3 years ago, OpenAi released Gym. There was little to no media coverage of the significance of this release.&lt;/p&gt;
-
-&lt;p&gt;It was actually really important.&lt;/p&gt;
-
-&lt;p&gt;Before OpenAi gym, there was no “standard” framework you could use test your Reinforcement learning algorithms on.&lt;/p&gt;
-
-&lt;p&gt;If a researcher in China was doing some work on Reinforcement Learning &amp;amp; wanted to have a benchmark to test it against a researcher&amp;rsquo;s work in Australia - this was not possible, as both researchers in their respective countries were using different frameworks that they had written &lt;em&gt;themselves&lt;/em&gt; to test their algorithms on.&lt;/p&gt;
-
-&lt;p&gt;In the accompanying exercise to this post below, we are going to make extensive use of Gym and implement an epsilon-greedy algorithm to solve the bandit problem.&lt;/p&gt;
-
-&lt;p&gt;Lets get cracking building your very first intro reinforcement learning algorithm with OpenAi gym.&lt;/p&gt;
-
-&lt;p&gt;We will be using Google Colaboratory for the compute, so you will also need a Google account.&lt;/p&gt;
-
-&lt;p&gt;To start the exercise &lt;a href=&#34;https://colab.research.google.com/drive/1AgvnqbumrkPAFKI-Apt1SUtvbws4jVSS&#34; target=&#34;_blank&#34;&gt;click the link here&lt;/a&gt;, or image below:&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://colab.research.google.com/drive/1AgvnqbumrkPAFKI-Apt1SUtvbws4jVSS&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://i.ibb.co/52nm1gw/Screen-Shot-2019-02-22-at-9-16-59-pm.png&#34; alt=&#34;IMAGE ALT TEXT HERE&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
     </item>
     
     <item>

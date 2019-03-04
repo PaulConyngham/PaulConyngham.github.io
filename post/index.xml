@@ -12,15 +12,15 @@
     
     
     <item>
-      <title>What the Shell is a Multi Armed Bandit? - An introduction to Reinforcement Learning</title>
-      <link>https://PaulConyngham.github.io/post/what-the-shell-is-a-multi-armed-bandit-guest-starring-the-epsilon-greedy-algorithm/</link>
-      <pubDate>Fri, 22 Feb 2019 20:29:09 +1100</pubDate>
+      <title>How to Find Your Life Partner Using Machine Learning</title>
+      <link>https://PaulConyngham.github.io/post/how-to-find-your-life-partner-using-machine-learning/</link>
+      <pubDate>Tue, 05 Mar 2019 07:56:25 +1100</pubDate>
       
-      <guid>https://PaulConyngham.github.io/post/what-the-shell-is-a-multi-armed-bandit-guest-starring-the-epsilon-greedy-algorithm/</guid>
-      <description>Guest starring the Epsilon-Greedy Algorithm, by Paul Steven Conyngham Machine learning people love to give fancy names to things so that no one can understand what they are on about.
-For someone relatively new to machine learning, &amp;ldquo;The multi armed bandit problem&amp;rdquo; sounds just like one of these fancy names.
-Fret not however!
-The point of this blog post is to explain exactly what a Bandit is and most importantly, why it is usually used as the starting point for anyone looking at learning Reinforcement Learning.</description>
+      <guid>https://PaulConyngham.github.io/post/how-to-find-your-life-partner-using-machine-learning/</guid>
+      <description>There is this age old problem in machine learning and it goes something like this.
+Let’s say you are on the hunt for a hot date with the eventual goal of picking up a life partner.
+First you hop on your favourite dating app of choice.
+After chatting to a few people you manage to score yourself a date. The way they were coming on to you so strongly on the first date was a was a bit weird, strike out, you decide that’s it for the online dating person.</description>
     </item>
     
   </channel>

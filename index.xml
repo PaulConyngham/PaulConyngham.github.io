@@ -15,7 +15,17 @@
       <pubDate>Tue, 05 Mar 2019 07:56:25 +1100</pubDate>
       
       <guid>https://PaulConyngham.github.io/post/how-to-find-your-life-partner-using-machine-learning/</guid>
-      <description>&lt;p&gt;There is this age old problem in machine learning and it goes something like this.&lt;/p&gt;
+      <description>
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 id=&#34;exploration-vs-exploitation&#34;&gt;Exploration vs Exploitation&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;There is this age old problem in machine learning and it goes something like this.&lt;/p&gt;
 
 &lt;p&gt;Let’s say you are on the hunt for a hot date with the eventual goal of picking up a life partner.&lt;/p&gt;
 
@@ -43,15 +53,21 @@
 
 &lt;p&gt;Take choosing a career - how much time do you spend looking at potential job opportunities - exploring - vs being in a particular job - exploiting.&lt;/p&gt;
 
-&lt;p&gt;Or take being a stock trader, how much time do you spend researching different trading techniques - exploring - before you decide to choose a particular trading stack - exploiting.&lt;/p&gt;
+&lt;p&gt;Or being a stock trader, how much time do you spend researching different trading techniques - exploring - before you decide to choose a particular trading stack - exploiting.&lt;/p&gt;
 
 &lt;p&gt;For that matter, take work in general. You could spend time on Facebook, Linkedin, Twitter exploring or you could buckle down and get exploiting the task you should be doing right now.&lt;/p&gt;
 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 id=&#34;enter-epsilon-greedy&#34;&gt;Enter Epsilon-Greedy&lt;/h2&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;We have seen that the problem of Exploration vs Exploitation occurs all over the place &amp;amp; is not limited to Machine Learning.&lt;/p&gt;
 
-&lt;p&gt;However, it just so happens that the Machine Learning world has devised one solution to the Exploration vs Exploitation problem.&lt;/p&gt;
+&lt;p&gt;However, it just so happens that the Machine Learning world has devised a solution to the Exploration vs Exploitation problem.&lt;/p&gt;
 
-&lt;p&gt;We call the algorithm that solves this problem “Epsilon-Greedy”.&lt;/p&gt;
+&lt;p&gt;We call a simple algorithm that solves this problem “Epsilon-Greedy”.&lt;/p&gt;
 
 &lt;p&gt;The name is irrelevant, however the underlying principle is deceptively simple and it is this principle that I would like to share with you in this post.&lt;/p&gt;
 
@@ -59,19 +75,29 @@
 
 &lt;p&gt;Once you have found an option that gives you the highest average reward, you continue to exploit that option.&lt;/p&gt;
 
-&lt;p&gt;That’s all there is too it!&lt;/p&gt;
+&lt;p&gt;That’s all there is too it.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;The main idea with Epsilon-Greedy is that given any problem, you spend some time exploring all the options that are available to you to solve that problem. Once you have found an option that gives you the highest average reward, you continue to exploit that option. &amp;ldquo;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;How would the world be if everyone valued the idea of Epsilon-Greedy as a universal principle rather than some obscure algorithm hidden in the pages of text book somewhere? Let’s take a minute to appreciate just how powerful the concept of Epsilon-Greedy really is.&lt;/p&gt;
 
-&lt;p&gt;Imagine if you are a student just starting out your first year of university. If you found that you were not good at a particular subject and you had Epsilon-Greedy as a valued principle, you would not care as much if you successively dropped courses because after all - you are just exploring. After exploring for a while you might just stumble upon a career path that might be more suited to you, which you could exploit - for higher average satisfaction over the course of your life.&lt;/p&gt;
+&lt;p&gt;Imagine if you are a student just starting out your first year of university. If you found that you were not good at a particular subject and you had Epsilon-Greedy as a valued principle, you would not care as much if you successively dropped courses because after all - you are just exploring. After exploring for a while you might just stumble upon a career path that may be more suited to you, which you could exploit - for higher average satisfaction over the course of your life.&lt;/p&gt;
 
-&lt;p&gt;Or even take it back to the dating example used at the start of this post. If you had Epsilon Greedy as one of your principles in your dating toolkit, would it not be so troubling if you knew that first you were going to first try a couple of different date options first before you decided to jump into a relationship with someone?&lt;/p&gt;
+&lt;p&gt;Or take it back to the dating example used at the start of this post. If you had Epsilon Greedy as one of your principles in your dating toolkit, would it not be so troubling if you knew that first you were going to first try a couple of different date options first before you decided to jump into a relationship with someone?&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 id=&#34;algorithms-axioms-or-discoveries&#34;&gt;Algorithms, Axioms or Discoveries?&lt;/h2&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;Up until now most people have treated machine learning algorithms as essentially obscure mathematical notation to be hauled out of dusty textbooks from time to time to solve case specific issues.&lt;/p&gt;
 
-&lt;p&gt;If we realize that these same algorithms address fundamentally human issues however, such as choosing when to explore and when to exploit, we can start treating these algorithms as fundamental “field tested” principles that exist in nature herself - that we can all adopt &amp;amp; start living our lives by.&lt;/p&gt;
+&lt;p&gt;If we realize that these same algorithms address fundamentally human issues however, such as choosing when to explore and when to exploit, we can start treating algorithms as fundamental “field tested” principles that exist in nature herself - that we can all adopt &amp;amp; start living our lives by.&lt;/p&gt;
 
-&lt;p&gt;In summary, the key idea to be learnt from the Epsilon-Greedy algorithm is that it really does pay to spend some time discovering and sampling potential options available to solving a particular problem before we go all out and exploit a particular solution to that problem.&lt;/p&gt;
+&lt;p&gt;In summary, the key idea to be learnt from the Epsilon-Greedy algorithm is that it really does pay to spend some time discovering and sampling potential options available to solving a problem, before we go all out and exploit a solution to that problem.&lt;/p&gt;
 
 &lt;p&gt;~&lt;/p&gt;
 
@@ -85,7 +111,12 @@
       <pubDate>Sat, 23 Feb 2019 18:56:50 +1100</pubDate>
       
       <guid>https://PaulConyngham.github.io/project/starai-deep-reinforcement-learning-course/</guid>
-      <description></description>
+      <description>
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 id=&#34;coming-to-the-internet-late-march-2019&#34;&gt;Coming to the Internet, late March 2019&lt;/h2&gt;
+</description>
     </item>
     
     <item>

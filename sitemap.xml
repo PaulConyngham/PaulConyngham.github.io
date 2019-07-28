@@ -1,5 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+    
+    <url>
+    
+      <loc>https://PaulConyngham.github.io/</loc>
+      <lastmod>2019-06-23T18:56:36+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://PaulConyngham.github.io/project/</loc>
+      <lastmod>2019-06-23T18:56:36+11:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://PaulConyngham.github.io/project/distributed-reinforcement-learning-on-sagemakerrl/</loc>
+      <lastmod>2019-06-23T18:56:36+11:00</lastmod>
+    </url>
+    
   
     
     <url>
@@ -75,7 +100,7 @@
     
     <url>
     
-      <loc>https://PaulConyngham.github.io/author/</loc>
+      <loc>https://PaulConyngham.github.io/authors/</loc>
       <priority>0</priority>
     </url>
     
@@ -83,7 +108,7 @@
     
     <url>
     
-      <loc>https://PaulConyngham.github.io/authors/</loc>
+      <loc>https://PaulConyngham.github.io/author/</loc>
       <priority>0</priority>
     </url>
     
@@ -99,25 +124,7 @@
     
     <url>
     
-      <loc>https://PaulConyngham.github.io/</loc>
-      <lastmod>2017-10-15T00:00:00+11:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://PaulConyngham.github.io/other/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://PaulConyngham.github.io/project/</loc>
-      <lastmod>2019-02-23T18:56:50+11:00</lastmod>
       <priority>0</priority>
     </url>
     

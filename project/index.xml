@@ -6,10 +6,19 @@
     <description>Recent content in Projects on Human Algorithms</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 Feb 2019 18:56:50 +1100</lastBuildDate>
+    <lastBuildDate>Sun, 23 Jun 2019 18:56:36 +1100</lastBuildDate>
     
 	<atom:link href="https://PaulConyngham.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>distributed reinforcement learning on SagemakerRL</title>
+      <link>https://PaulConyngham.github.io/project/distributed-reinforcement-learning-on-sagemakerrl/</link>
+      <pubDate>Sun, 23 Jun 2019 18:56:36 +1100</pubDate>
+      
+      <guid>https://PaulConyngham.github.io/project/distributed-reinforcement-learning-on-sagemakerrl/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Starai Deep Reinforcement Learning Course</title>
@@ -18,7 +27,7 @@
       
       <guid>https://PaulConyngham.github.io/project/starai-deep-reinforcement-learning-course/</guid>
       <description> &amp;nbsp;
-Coming to the Internet, late March 2019 </description>
+The StarAi Deep Reinforcement Learning course can be located here </description>
     </item>
     
     <item>
